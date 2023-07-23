@@ -6,35 +6,40 @@ Using logistic regresion and random forest classifier, we are building a model t
 Results
 1. Logistic regression model
 
-Confusion matrix
-array([[18679,    80],
-       [   67,   558]], dtype=int64)
+       Confusion Matrix results
+           True positive:  18679   
+           False positive: 67
+           True negative:  558
+           False negative: 80
 
-precision    recall  f1-score   support
+                     precision    recall  f1-score   support
 
-           0       1.00      1.00      1.00     18759
-           1       0.87      0.89      0.88       625
+                  0       1.00      1.00      1.00     18759
+                  1       0.87      0.89      0.88       625
 
-    accuracy                           0.99     19384
-   macro avg       0.94      0.94      0.94     19384
-weighted avg       0.99      0.99      0.99     19384
+           accuracy                           0.99     19384
+          macro avg       0.94      0.94      0.94     19384
+       weighted avg       0.99      0.99      0.99     19384
 
 Discussion: For the logistic regression model, the recall for healthy "0" loans is 100%, while for risky loan is 89%. From confusion matrix, 67 were tagged as false positive while 80 were tagged as false negatives. 
 
 
-
 2. Random Forest Classifier
-array([[18681,    78],
-       [   74,   551]], dtype=int64)
 
-precision    recall  f1-score   support
+       Confusion Matrix results
+           True positive:  18681   
+           False positive: 74
+           True negative:  551
+           False negative: 78
 
-           0       1.00      1.00      1.00     18759
-           1       0.88      0.88      0.88       625
+                     precision    recall  f1-score   support
 
-    accuracy                           0.99     19384
-   macro avg       0.94      0.94      0.94     19384
-weighted avg       0.99      0.99      0.99     19384
+                  0       1.00      1.00      1.00     18759
+                  1       0.88      0.88      0.88       625
+
+           accuracy                           0.99     19384
+          macro avg       0.94      0.94      0.94     19384
+       weighted avg       0.99      0.99      0.99     19384
 
 Discussion: For the random forest classifier model, the recall for healthy "0" loans is 100%, while for risky loan is 88%. From confusion matrix, 74 were tagged as false positive while 78 were tagged as false negatives. 
 
