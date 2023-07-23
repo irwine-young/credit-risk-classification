@@ -49,7 +49,7 @@ As the ratio of healthy to risky loan is 30:1, both models can better predict th
 
 3. Feature importance
 
-![image](https://github.com/irwine-young/credit-risk-classification/assets/125709729/db286be0-e6a9-4385-843a-2f30654d0b54)
+![image](Images/feature_importance.png)
 
 
  Looking at the each feature importance, the "derogatory marks" (borrower specific feature) is not relevant for this model. The interest rate is highly relevant in determining the default risk to the borrowers. Future data gathering can focus more on other relevant features (borrower income, det to income, total debt and loan size) instead.
